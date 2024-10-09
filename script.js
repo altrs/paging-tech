@@ -39,7 +39,7 @@ function findFrequency() {
     const userCallsign = document.getElementById('callsign').value.trim().toUpperCase();
     const matchingFrequencies = fdata.filter(record => record["Call Sign"] === userCallsign);
     const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = ''; // Clear previous results
+    resultsDiv.innerHTML = '';
 
     if (matchingFrequencies.length > 0) {
         resultsDiv.innerHTML += `Call Sign: ${userCallsign}<br><br>`;
