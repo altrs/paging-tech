@@ -90,7 +90,7 @@
   <p>Sources: <a href="https://debugger.medium.com/howto-using-a-pager-in-the-21st-century-6a57454ecde8" target="_blank">You can still use a pager in 2023</a> &nbsp;//&nbsp;
   <a href="https://www.tomshardware.com/news/raspberry-pi-hacking-like-its-1995" target="_blank">Raspberry Pi hacking like its 1995</a> &nbsp;//&nbsp; <a href="https://hifld-geoplatform.hub.arcgis.com/datasets/geoplatform::paging-transmission-towers/about" target="_blank">FCC Dataset</a></p><br>
 
-  <h3>Step 1: Find towers available near you</h3>
+  <h3><i>STEP 1: FIND TOWERS NEAR YOU</i></h3>
   <div class="input">
     Enter your latitude: <input id="lat" placeholder="i.e. 42.361145">
     Enter your longitude: <input id="long" placeholder="i.e. -71.057083"><br>
@@ -102,7 +102,7 @@
   <div id="map" style="width: 100%; height: 500px;"></div>
   <script src="script.js"></script>
 
-  <h3><br>Step 2: Find frequencies available near you</h3>
+  <h3><br><i>STEP 2: FIND FREQUENCIES AVAILIABLE NEAR YOU</i></h3>
   <div class="input">
     Enter callsign: <input id="callsign" placeholder="i.e. KAA279"><br><br>
     Click a marker on the map that's near your location. Copy the callsign and paste it below.<br>
@@ -111,11 +111,12 @@
     <div id="results" style="padding-top: 25px;"></div>
   </div>
 
-  <h3><br>Step 3: Utalize paging technology!</h3>
+  <h3><br><i>STEP 3: UTALIZE PAGING TECHNOLOGY</i></h3>
   <p>After assessing which frequencies might be available for you to use for research/education purposes, another aspect is ensuring there’s no other signal on the same frequency. You can do this by monitoring the frequency with a RTL-SDR receiver and HDSDR software. When obtaining a pager, ensure you know its frequency and capcode, likely written on the back of the device. In order to use a specific pager, ensure its frequency aligns with the frequencies available in your region, which you can figure out above.<br><br>
   Upon sorting those details out, the next step is to Rpitx with your raspberry pi. Following their documentation and the sources listed towards the beginning of article, you’ll be able to send a message from your Raspi to the pager!<br><br>
 
-  <a href="kepler.html">Link to Kepler map where you can enter your address and see the tower locations around you!</a>
+  <a href="kepler.html">Link to Kepler map where you can see the concentration of transmission towers and search your location directly</a>
+
   </p>
 
 </body>
